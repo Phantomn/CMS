@@ -1,27 +1,28 @@
 {
-   "name": "next-prisma-tailwind-ecommerce",
-   "version": "1.0.0",
-   "scripts": {
-      "prepare": "husky install",
-      "update": "npx npm-check-updates -u"
-   },
-   "author": {
-      "name": "Sesto",
-      "url": "https://github.com/sesto-dev"
-   },
-   "license": "MIT",
-   "devDependencies": {
-      "@commitlint/cli": "^19.5.0",
-      "@commitlint/config-conventional": "^19.5.0",
-      "@trivago/prettier-plugin-sort-imports": "^4.3.0",
-      "@typescript-eslint/eslint-plugin": "^8.8.1",
-      "@typescript-eslint/parser": "^8.8.1",
-      "eslint": "^9.12.0",
-      "eslint-config-next": "^14.2.15",
-      "eslint-plugin-react": "^7.37.1",
-      "husky": "^9.1.6",
-      "lint-staged": "^15.2.10",
-      "prettier": "^3.3.3",
-      "prettier-plugin-tailwindcss": "^0.6.8"
-   }
+  "name": "next-prisma-tailwind-ecommerce",
+  "version": "1.0.0",
+  "scripts": {
+    "prepare": "husky",
+    "update": "npx npm-check-updates -u",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "author": {
+    "name": "Sesto",
+    "url": "https://github.com/phantomn"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
+    "eslint": "^9.25.1",
+    "eslint-config-next": "^15.3.1",
+    "eslint-plugin-react": "^7.37.5",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.1",
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.11"
+  }
 }

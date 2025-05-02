@@ -1,0 +1,22 @@
+---
+description: "CursorRIPER Framework - State Management"
+globs: 
+alwaysApply: true
+---
+*This file automatically tracks the current state of the project. It should never be edited manually.*
+
+PROJECT_PHASE: "UNINITIATED"
+# Possible values: "UNINITIATED", "INITIALIZING", "DEVELOPMENT", "MAINTENANCE"
+
+RIPER_CURRENT_MODE: "NONE"
+# Possible values: "NONE", "RESEARCH", "INNOVATE", "PLAN", "EXECUTE", "REVIEW"
+
+START_PHASE_STATUS: "NOT_STARTED"
+# Possible values: "NOT_STARTED", "IN_PROGRESS", "COMPLETED", "ARCHIVED"
+
+START_PHASE_STEP: 0
+# Possible values: 0-6 (0=Not started, 1=Requirements, 2=Technology, 3=Architecture, 4=Scaffolding, 5=Environment, 6=Memory Bank)
+
+INITIALIZATION_DATE: "$(date --iso-8601=seconds)" # ISO 8601 format - Initialization complete (v2)
+
+LAST_UPDATE: "$(date --iso-8601=seconds)" # 이 값은 실제 실행 시 현재 시간으로 업데이트되어야 합니다.

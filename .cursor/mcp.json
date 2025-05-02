@@ -1,0 +1,64 @@
+{
+  "mcpServers": {
+    "memory": {
+      "command": "docker",
+      "args": ["run", "-i", "--rm", "memory"],
+      "env": {
+          "MEMORY_FILE_PATH": "/home/phantom/work/LSELECTRIC/memory.json"
+        }
+      },
+      "filesystem": {
+        "command": "docker",
+        "args": [
+          "run",
+          "-i",
+          "--rm",
+          "--mount", "type=bind,src=/home/phantom/work/LSELECTRIC,dst=/projects",
+          "filesystem",
+          "/projects"
+        ]
+      },
+      "brave-search": {
+        "command": "docker",
+        "args": [
+          "run",
+          "-i",
+          "--rm",
+          "-e",
+          "BRAVE_API_KEY",
+          "brave-search"
+        ],
+        "env": {
+          "BRAVE_API_KEY": "BSAlGtv38-Epgc2UqKHUUnDib-qhIff"
+        }
+      },
+      "sequential-thinking": {
+        "command": "docker",
+        "args": [
+          "run",
+          "--rm",
+          "-i",
+          "sequentialthinking"
+        ]
+      },
+      "TalkToFigma": {
+        "command": "bunx",
+        "args": [
+          "cursor-talk-to-figma-mcp@latest"
+        ]
+      },
+      "toolbox": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "@smithery/cli@latest",
+          "run",
+          "@smithery/toolbox",
+          "--config",
+          "{\"dynamic\":false,\"smitheryApiKey\":\"0077b485-b0ff-4582-9356-083becf2c8d9\"}",
+          "--key",
+          "0077b485-b0ff-4582-9356-083becf2c8d9"
+        ]
+      }
+    }
+  }

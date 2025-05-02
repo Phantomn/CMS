@@ -1,14 +1,15 @@
 # Use an official Node.js runtime as the base image
-FROM node:16
+FROM node:22
 
 # Set the working directory
 WORKDIR /usr/src/app
 
 # Copy package.json and package-lock.json
 COPY package*.json ./
+COPY prisma ./
 
 # Install dependencies
-RUN npm install
+RUN npm install --legacy-peer-deps
 
 # Copy the rest of the application code
 COPY . .
@@ -17,7 +18,7 @@ COPY . .
 # RUN npm run build
 
 # Expose the application's port
-EXPOSE 3000
+EXPOSE 8888
 
 # Start the application
-CMD ["node", "app.js"]
+CMD ["npm", "run", "dev"]
